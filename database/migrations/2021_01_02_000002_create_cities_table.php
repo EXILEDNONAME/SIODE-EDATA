@@ -8,12 +8,12 @@ class CreateCitiesTable extends Migration {
   public function up() {
     Schema::create('cities', function (Blueprint $table) {
       $table->increments('id');
-      $table->integer('province_id')->unsigned();
+      $table->integer('id_province')->unsigned();
       $table->string("name");
       $table->string("type");
       $table->string("postal_code");
+      $table->foreign('id_province')->references('id')->on('provinces')->onDelete('restrict')->onUpdate('restrict');
       $table->timestamps();
-      $table->foreign('province_id')->references('id')->on('provinces')->onDelete('restrict')->onUpdate('restrict');
     });
   }
 
