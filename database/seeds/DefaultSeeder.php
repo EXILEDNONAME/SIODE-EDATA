@@ -14,5 +14,6 @@ class DefaultSeeder extends Seeder {
     $this->call(CitySeeder::class);
 
     $this->call(JobSeeder::class);
+    $this->call(ReligionSeeder::class);
   }
 }
