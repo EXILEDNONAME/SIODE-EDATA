@@ -1,5 +1,5 @@
 @extends('layouts.pages.create', ['header' => 'true'])
-@push('title', 'Cities')
+@push('title', 'Regions')
 
 @push('content-body')
 <form method="POST" action="{{ URL::current() }}/../" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">

@@ -1,5 +1,5 @@
 @extends('layouts.pages.show', ['status' => 'true'])
-@push('title', 'Cities')
+@push('title', 'Regions')
 
 @push('content-body')
 <div class="table-responsive">

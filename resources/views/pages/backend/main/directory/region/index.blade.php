@@ -1,5 +1,5 @@
 @extends('layouts.pages.index')
-@push('title', 'Cities')
+@push('title', 'Regions')
 
 @push('content-head')
 <th> Name </th>
