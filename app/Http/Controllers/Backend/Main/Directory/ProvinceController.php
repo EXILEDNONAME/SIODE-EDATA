@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Spatie\Activitylog\Models\Activity;
 
-class CityController extends Controller {
+class ProvinceController extends Controller {
 
   /**
   **************************************************
@@ -19,9 +19,9 @@ class CityController extends Controller {
   **/
 
   public function __construct() {
-    $this->url = '/dashboard/directory/cities';
-    $this->path = 'pages.backend.main.directory.city';
-    $this->model = 'App\Models\Backend\System\Packet\City';
+    $this->url = '/dashboard/directory/provinces';
+    $this->path = 'pages.backend.main.directory.province';
+    $this->model = 'App\Models\Backend\Main\Directory\Province';
   }
 
   /**

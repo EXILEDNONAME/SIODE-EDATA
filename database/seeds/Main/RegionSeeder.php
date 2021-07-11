@@ -3,9 +3,9 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class CitySeeder extends Seeder {
+class RegionSeeder extends Seeder {
   public function run() {
-    DB::insert("INSERT INTO `cities` (`id`, `id_province`, `name`, `type`, `postal_code`, `created_at`, `updated_at`) VALUES
+    DB::insert("INSERT INTO `regions` (`id`, `id_province`, `name`, `type`, `postal_code`, `created_at`, `updated_at`) VALUES
     (1, 21, 'Aceh Barat', 'Kabupaten', '23681', '2019-08-29 12:55:53', '2019-08-29 12:55:53'),
     (2, 21, 'Aceh Barat Daya', 'Kabupaten', '23764', '2019-08-29 12:55:53', '2019-08-29 12:55:53'),
     (3, 21, 'Aceh Besar', 'Kabupaten', '23951', '2019-08-29 12:55:53', '2019-08-29 12:55:53'),

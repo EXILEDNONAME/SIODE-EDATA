@@ -16,20 +16,20 @@ Route::group([
   Route::resource('/', 'JobController')->middleware(['auth', 'administrator'])->parameters(['' => 'id']);
 });
 
-// DIRECTORY - CITIES
+// DIRECTORY - REGIONS
 Route::group([
-  'as' => 'main.directory.cities.',
-  'prefix' => 'dashboard/directory/cities',
+  'as' => 'main.directory.regions.',
+  'prefix' => 'dashboard/directory/regions',
   'namespace' => 'Backend\Main\Directory',
 ], function(){
-  Route::get('status-done/{id}', 'CityController@status_done')->name('status-done')->middleware(['auth', 'administrator']);
-  Route::get('status-pending/{id}', 'CityController@status_pending')->name('status-pending')->middleware(['auth', 'administrator']);
-  Route::get('enable/{id}', 'CityController@enable')->name('enable')->middleware(['auth', 'administrator']);
-  Route::get('disable/{id}', 'CityController@disable')->name('disable')->middleware(['auth', 'administrator']);
-  Route::get('status/{id}/{slug}', 'CityController@status')->name('status')->middleware(['auth', 'administrator']);
-  Route::get('delete/{id}', 'CityController@delete')->name('delete')->middleware(['auth', 'administrator']);
-  Route::get('deleteall', 'CityController@deleteall')->name('deleteall')->middleware(['auth', 'administrator']);
-  Route::resource('/', 'CityController')->middleware(['auth', 'administrator'])->parameters(['' => 'id']);
+  Route::get('status-done/{id}', 'RegionController@status_done')->name('status-done')->middleware(['auth', 'administrator']);
+  Route::get('status-pending/{id}', 'RegionController@status_pending')->name('status-pending')->middleware(['auth', 'administrator']);
+  Route::get('enable/{id}', 'RegionController@enable')->name('enable')->middleware(['auth', 'administrator']);
+  Route::get('disable/{id}', 'RegionController@disable')->name('disable')->middleware(['auth', 'administrator']);
+  Route::get('status/{id}/{slug}', 'RegionController@status')->name('status')->middleware(['auth', 'administrator']);
+  Route::get('delete/{id}', 'RegionController@delete')->name('delete')->middleware(['auth', 'administrator']);
+  Route::get('deleteall', 'RegionController@deleteall')->name('deleteall')->middleware(['auth', 'administrator']);
+  Route::resource('/', 'RegionController')->middleware(['auth', 'administrator'])->parameters(['' => 'id']);
 });
 
 // DIRECTORY - PROVINCES

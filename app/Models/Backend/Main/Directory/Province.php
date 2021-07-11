@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Backend\System\Packet;
+namespace App\Models\Backend\Main\Directory;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Activitylog\Traits\LogsActivity;

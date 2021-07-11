@@ -11,7 +11,7 @@ class DefaultSeeder extends Seeder {
 
     // Packet
     $this->call(ProvinceSeeder::class);
-    $this->call(CitySeeder::class);
+    $this->call(RegionSeeder::class);
 
     $this->call(JobSeeder::class);
     $this->call(ReligionSeeder::class);

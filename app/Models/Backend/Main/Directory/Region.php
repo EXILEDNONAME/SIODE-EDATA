@@ -10,7 +10,7 @@ class Region extends Model {
 
   use LogsActivity;
 
-  protected $table = 'cities';
+  protected $table = 'regions';
   protected $primaryKey = 'id';
   protected $guarded = ['id'];
 
