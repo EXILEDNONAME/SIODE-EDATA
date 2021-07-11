@@ -37,10 +37,10 @@
           <span class="menu-text"> Jobs </span>
         </a>
       </li>
-      <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/directory/cities*')) ? 'menu-item-active menu-item-open' : '' }}">
-        <a href="/dashboard/directory/cities" class="menu-link">
+      <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/directory/regions*')) ? 'menu-item-active menu-item-open' : '' }}">
+        <a href="/dashboard/directory/regions" class="menu-link">
           <i class="menu-bullet menu-bullet-dot"><span></span></i>
-          <span class="menu-text"> Cities </span>
+          <span class="menu-text"> Regions </span>
         </a>
       </li>
       <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/directory/provinces*')) ? 'menu-item-active menu-item-open' : '' }}">
