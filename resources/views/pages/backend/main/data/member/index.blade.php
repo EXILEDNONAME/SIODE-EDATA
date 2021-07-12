@@ -66,7 +66,18 @@ $('.filter-region').val('');
 { data: 'id_regions' },
 { data: 'nik' },
 { data: 'name' },
-{ data: 'gender' },
+{
+  data: 'gender', orderable: true, 'className': 'align-middle text-center', 'width': '1',
+  render: function ( data, type, row ) {
+    if ( data == 0) { return ''; }
+    if ( data == 1 ) { return 'Male'; }
+    if ( data == 2 ) { return 'Female'; }
+  }
+},
 { data: 'address' },
 { data: 'education' },
+@endpush
+
+@push('content-body')
+
 @endpush
