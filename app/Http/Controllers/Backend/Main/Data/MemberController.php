@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Backend\Main\Directory;
+namespace App\Http\Controllers\Backend\Main\Data;
 
 use Auth;
 use DataTables;
@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Spatie\Activitylog\Models\Activity;
 
-class RegionController extends Controller {
+class MemberController extends Controller {
 
   /**
   **************************************************
@@ -19,9 +19,9 @@ class RegionController extends Controller {
   **/
 
   public function __construct() {
-    $this->url = '/dashboard/directory/regions';
-    $this->path = 'pages.backend.main.directory.region';
-    $this->model = 'App\Models\Backend\Main\Directory\Region';
+    $this->url = '/dashboard/data/members';
+    $this->path = 'pages.backend.main.data.member';
+    $this->model = 'App\Models\Backend\Main\Data\Member';
   }
 
   /**
@@ -37,7 +37,9 @@ class RegionController extends Controller {
       return DataTables::of($data)
       ->addColumn('checkbox', 'includes.datatable.checkbox')
       ->addColumn('action', 'includes.datatable.action')
-      ->editColumn('id_provinces', function($order) { return $order->provinces->name; })
+      ->editColumn('id_jobs', function($order) { return $order->jobs->name; })
+      ->editColumn('id_religions', function($order) { return $order->religions->name; })
+      ->editColumn('id_regions', function($order) { return $order->regions->name; })
       ->rawColumns(['action', 'checkbox'])
       ->addIndexColumn()
       ->make(true);

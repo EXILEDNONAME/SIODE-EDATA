@@ -326,6 +326,7 @@ var KTDatatablesExtensionsKeytable = function() {
       $('.filter-type').val('');
       $('#date_start').val('');
       $('#date_end').val('');
+      @stack('filter-reset')
       table.search( '' ).columns().search( '' ).draw();
     });
 

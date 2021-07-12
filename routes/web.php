@@ -32,4 +32,5 @@ require __DIR__.'/backend/system/dummy.php';
 require __DIR__.'/backend/system/management.php';
 
 // MAIN
+require __DIR__.'/backend/main/data.php';
 require __DIR__.'/backend/main/directory.php';

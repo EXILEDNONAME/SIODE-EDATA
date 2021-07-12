@@ -4,7 +4,7 @@ namespace App\Models\Backend\Main\Directory;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Activitylog\Traits\LogsActivity;
-use App\Models\Backend\System\Packet\Province;
+use App\Models\Backend\Main\Directory\Province;
 
 class Region extends Model {
 
@@ -17,7 +17,7 @@ class Region extends Model {
   protected static $logAttributes = ['*'];
 
   public function provinces(){
-    return $this->belongsTo(Province::class, 'id_provinces');
+    return $this->belongsTo(Province::class, 'id_province');
   }
 
 }

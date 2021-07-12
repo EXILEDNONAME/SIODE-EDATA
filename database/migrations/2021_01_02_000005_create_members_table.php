@@ -11,11 +11,11 @@ class CreateMembersTable extends Migration {
       $table->integer('id_job')->unsigned();
       $table->integer('id_religion')->unsigned();
       $table->integer('id_region')->unsigned();
-      $table->string('nik');
-      $table->string('name');
+      $table->string('nik')->nullable();
+      $table->string('name')->nullable();
       $table->string('gender');
-      $table->string('address');
-      $table->string('education');
+      $table->string('address')->nullable();
+      $table->string('education')->nullable();
       $table->text('description')->nullable();
       $table->integer('active')->default(1);
       $table->integer('status')->default(1);

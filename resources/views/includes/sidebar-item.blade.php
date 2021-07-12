@@ -3,7 +3,7 @@
   <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 </li>
 
-<li class="menu-item menu-item-submenu {{ (request()->is('dashboard/dummy*')) ? 'menu-item-active menu-item-open' : '' }}">
+<li class="menu-item menu-item-submenu {{ (request()->is('dashboard/data*')) ? 'menu-item-active menu-item-open' : '' }}">
   <a href="javascript:;" class="menu-link menu-toggle">
     <span class="menu-icon"><i class="menu-icon fas fa-hashtag"></i></span>
     <span class="menu-text"> Data </span>
@@ -12,10 +12,10 @@
   <div class="menu-submenu">
     <i class="menu-arrow"></i>
     <ul class="menu-subnav">
-      <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/dummy/table*')) ? 'menu-item-active menu-item-open' : '' }}">
-        <a href="javascript:;" class="menu-link">
+      <li class="menu-item menu-item-submenu {{ (request()->is('dashboard/data/members*')) ? 'menu-item-active menu-item-open' : '' }}">
+        <a href="/dashboard/data/members" class="menu-link">
           <i class="menu-bullet menu-bullet-dot"><span></span></i>
-          <span class="menu-text"> Users </span>
+          <span class="menu-text"> Members </span>
         </a>
       </li>
     </ul>

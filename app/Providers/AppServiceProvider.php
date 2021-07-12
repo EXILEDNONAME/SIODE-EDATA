@@ -13,7 +13,11 @@ class AppServiceProvider extends ServiceProvider {
         // System
         require_once app_path() . '/Helpers/System/Default.php';
         require_once app_path() . '/Helpers/System/Dummy.php';
-        
+
+        // Main
+        require_once app_path() . '/Helpers/Main/Data.php';
+        require_once app_path() . '/Helpers/Main/Directory.php';
+
     }
 
     public function boot() {
